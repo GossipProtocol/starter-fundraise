@@ -14,7 +14,7 @@ Every paid position pays **1% of its price** to the course. The buyer pays exact
 - **Cards.** The Stripe Checkout Session is a Connect destination charge with `application_fee_amount` set to the fee. Stripe keeps the fee on the platform account and transfers the rest to the athlete's connected account inside the same payment.
 - **USDC.** The buyer's wallet sends two transfers in the same checkout: the athlete's share to the campaign's payout address and the fee to `COURSE_FEE_RECIPIENT`. The server marks the position paid only after both transfers are verified on chain.
 
-The fee is a default, not a license condition. This code is MIT licensed, so you can change it, but the fee is how the course pays for itself and the rate is small enough that most forks leave it. If you change the recipient or the rate, say so in your README.
+The fee is a default, not a license condition. This code is MIT licensed, so you can change it. If you change the recipient or the rate, say so in your README.
 
 ## What is in the box
 
